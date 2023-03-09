@@ -3,7 +3,7 @@ title:  "How much are you worth?"
 subtitle: "At least a fortune!"
 author: "Dirk Lindner"
 avatar: "img/authors/Bild_Dirk_Lindner.jpg"
-image: "img/soccer_blog.jpg"
+image: "img/soccer.jpg"
 date:   2023-03-09
 ---
 
