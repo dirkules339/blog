@@ -11,11 +11,9 @@ date:   2023-03-09
 In this post I'm analysing the market value of soccer players using a dataset from Kaggle. The dataset is scraped from transfermarkt.com.
 At first I take a look at the data in generell to get an idea what data is available and on what the market value of soccer players might depend on.
 In the second step I use this results in a basic linear regression model to predict the market value. So let's take a look at the results.
----
-image: "img/ball.jpg"
----
 
-img/ball.jpg
+![A test image](img/ball.jpg)
+
 ### Aliquam suscipit.
 Cras eget nisl accumsan, porta nisl in, egestas sapien. Vestibulum gravida nulla sed facilisis tempor. Suspendisse maximus nisi sit amet velit sodales fringilla. Vivamus luctus risus eget dui consectetur porttitor. Maecenas ut ultrices orci. Maecenas mollis est eu sodales mollis. Nulla facilisi. Suspendisse eros arcu, elementum sed sem eu, pharetra rhoncus odio. Proin nec tincidunt velit. Cras nisl augue, faucibus sed mauris in, vestibulum mollis nisl. Nam id libero ultrices, consequat ex vitae, convallis nulla.
 
