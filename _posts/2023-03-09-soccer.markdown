@@ -15,8 +15,9 @@ In the second step I use this results in a basic linear regression model to pred
 ### Github Repo:
 https://github.com/dirkules339/Udacity_Data_Science_Nanodegree.git
 
-### dummdidu
-Cras eget nisl accumsan, porta nisl in, egestas sapien. Vestibulum gravida nulla sed facilisis tempor. Suspendisse maximus nisi sit amet velit sodales fringilla. Vivamus luctus risus eget dui consectetur porttitor. Maecenas ut ultrices orci. Maecenas mollis est eu sodales mollis. Nulla facilisi. Suspendisse eros arcu, elementum sed sem eu, pharetra rhoncus odio. Proin nec tincidunt velit. Cras nisl augue, faucibus sed mauris in, vestibulum mollis nisl. Nam id libero ultrices, consequat ex vitae, convallis nulla.
+### 1. Take a look at the data
+After I took a first Look on the data with a the help of a boxplot I saw that there where same changes needed befor the data is interpretable:
+
 
 ![A test image](img/ball.jpg)
 
