@@ -8,9 +8,10 @@ date:   2023-03-09
 ---
 
 ### Market value of soccer players
-In this post I'm analysing the market value of soccer players using a dataset from Kaggle. The dataset is scraped from transfermarkt.com.
+In this post I'm analysing the market value of soccer players using a dataset from Kaggle. The dataset is scraped from transfermarkt.com. You can find the complete dataset here: https://github.com/dirkules339/Udacity_Data_Science_Nanodegree.git
 At first I take a look at the data in generell to get an idea what data is available and on what the market value of soccer players might depend on.
 In the second step I use this results in a basic linear regression model to predict the market value. So let's take a look at the results.
+Y
 
 ![A test image](img/ball.jpg)
 
