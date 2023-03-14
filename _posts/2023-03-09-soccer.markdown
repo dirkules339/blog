@@ -36,11 +36,17 @@ After I took a first Look on the data with a the help of a boxplot, I saw that t
 
 ### 2. Simple linear regression model to predict market value of players
 
-#### Generate dummy variables (basic information)
+After getting a better understandig of the data I generated dummy variables as preparation for a first linear regression model to predict the market value of soccer players. Below you can see the example of sub postion dummy variables. For the regression model I generated dummy variables of postion, sub postion, foot and the current competition id. Additionally I used current club id and the players heights as variables for the model.
+ 
+#### Generate dummy variables of sub positions (basic information)
 ![A test image](img/6.png)
+
+With a training R2 of 0.25 the first model wasn't quiet good. You can see how predicted and actuel response differ in the plot below. Interessting fact: The testing R2 of scikit learn linear regression model becomes negative if it is lower than 0.5! 
 
 #### Compare prediciton with actual response
 ![A test image](img/7.png)
+
+To improve the model I added additional variables like goals, assists, red cards, yellow cards and minutes played to our dataset. Even if that improved the training R2 to 0.55 the testing R2 is still negative. That means the model has still room for improvement, but by adding some more specififc player stats to the model I easily doubled the fit. 
 
 #### Generate dummy variables (personal player stats)
 ![A test image](img/8.png)
