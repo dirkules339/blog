@@ -18,11 +18,10 @@ https://github.com/dirkules339/Udacity_Data_Science_Nanodegree.git
 ### 1. Take a look at the data
 After I took a first Look on the data with a the help of a boxplot, I saw that there are some changes needed befor the data is interpretable. So I changed the format of the market value into million € to make it more readable. I only included data where the market value is not null and the players last season where in 2022 and they have an not axpired contract right now. I did that to look only at players who are still playing in an european pro league.
 
-
+#### Market value compared by league (first try)
 ![A test image](img/1.png)
 
-Suspendisse lorem odio, blandit at nisl quis, hendrerit tempus tellus. Donec eget leo quis nisi vulputate consectetur. Praesent dignissim enim elit, congue luctus nisl cursus at. Sed rutrum molestie risus. Donec vulputate gravida accumsan. Vivamus tempus ullamcorper eleifend. Sed sagittis mi ut dolor tincidunt, ac rutrum nisi commodo.
-
+#### Market value compared by league (second try)
 ![A test image](img/2.png)
 
 Fusce non elit in diam rutrum vestibulum. Donec vitae elementum erat. Praesent elementum eget justo at bibendum. Fusce interdum diam lorem, ut placerat elit pretium quis. Quisque eu urna at quam commodo sagittis. Etiam posuere convallis tincidunt. Phasellus vitae ligula neque. Vivamus a purus at dolor iaculis placerat. Curabitur convallis eu lacus congue sagittis.
