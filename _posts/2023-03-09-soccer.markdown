@@ -13,7 +13,7 @@ At first I take a look at the data in generell to get an idea what data is avail
 In the second step I use this results in a basic linear regression model to predict the market value. So let's take a look at the results. After these changes we now see the top five leagues by market value of players are Great Britain, Spain, Italy, Germany and France. Netherlands are now ranked 9th place and are no longe part of the top five. That shows us, that the cleaning of the data is a crucial part of analysing data to get the right results.
 
 ### Github Repo:
-https://github.com/dirkules339/Udacity_Data_Science_Nanodegree.git
+You can find the full code here: https://github.com/dirkules339/Udacity_Data_Science_Nanodegree.git
 
 ### 1. Take a look at the data
 After I took a first Look on the data with a the help of a boxplot, I saw that there are some changes needed befor the data is interpretable. So I changed the format of the market value into million € to make it more readable. I only included data where the market value is not null and the players last season where in 2022 and they have an not axpired contract right now. I did that to look only at players who are still playing in an european pro league.
