@@ -13,26 +13,29 @@ In this project, I have employed the use of supervised and unsupervised machine 
 ### Github Repo:
 You can find the full code here: [https://github.com/dirkules339/Bertelsmann-Arvato-Project.git]
 
-### 1. Take a look at the data
-After I took a first Look on the data with a the help of a boxplot, I saw that there are some changes needed befor the data is interpretable. So I changed the format of the market value into million € to make it more readable. I only included data where the market value is not null and the players last season where in 2022 and they haven't got an expired contract right now. I did that to look only at players who are still playing in an european pro league.
+### 1. Preprosessing
+After a first look into the data I saw that the datasets included a lot of missing values. To clean the data enough without loosing to much data I decided to define a threshold for columns and rows to drop. By Using the confidence interval of 99% I defind the threshold for columns to drop by 20% missing values and for rows to drop by 10% missing values. By that I could keep 99% of columns and rows.
 
-#### Market value compared by league (first try)
-![A test image](img/1.png)
+#### Proportion of missing values in AZDIAS features
+![A test image](img/B1.png)
 
-#### Market value compared by league (second try)
-![A test image](img/2.png)
+#### Proportion of missing values per row in AZDIAS
+![A test image](img/B2.png)
 
 
-Nexts things I looke into where the top ten clubs by players market value and the top ten players. Six clubs of the top 10 are from great britain. The other four clubs are from Spain, Germany and France and again not from Italy, despite Italy is ranked number three of Leagues by players market value. You can see something quit similar in the top ten of players. Four players are from Great Britain, followed by Spain with three, Germany with two and France with one player and again Italy is not ranked with players within the top ten. In addition you can seet that there are no defenders within the top ten and that the market value of players differs within the player positions. So maybe this infromation helps to predict the market value of players. That is what I looked into int the second part. 
+Next I reencoded categorical variables and changed value errors to nan values with the help of some basic data manipulations and sklearns one hot encoder before I imputed missing values and scaled the features as preperation for the segmentation and modelling part.
 
-#### Top 10 Clubs by players market value 
-![A test image](img/3.png)
+#### Data manipulation 
+![A test image](img/B3.png)
 
-#### Top 10 Players by market value
-![A test image](img/4.png)
+#### One hot encoded features
+![A test image](img/B4.png)
 
-#### Market value by sub position
-![A test image](img/5.png)
+#### Impute missing values
+![A test image](img/B6.png)
+
+#### Scale Features
+![A test image](img/B7.png)
 
 
 ### 2. Simple linear regression model to predict market value of players
