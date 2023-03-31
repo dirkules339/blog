@@ -121,5 +121,8 @@ Overall the result seems to be a good model.
 
 However, this project is not complete. There is much more work that could be done on the data to improve the predictive model. For instance, more or fewer features could be removed. The taken time for model training was really high (Time taken: 597.1155662536621) so maybe it would be better to test other algorithms as well like random forest. And Lightgbm had a really good model AUROC score of .98 where I assumed overfitting issue, so it is woth looking into that and find out if that is true.
 
+### 6. Acknowldgements
+I would like to thank the commitment of Udacity for presenting me to this Capstone project and Arvato Financial Services for providing the real-life data.
+
 ### Github Repo:
 You can find the full code here: https://github.com/dirkules339/Bertelsmann-Arvato-Project.git
