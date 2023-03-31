@@ -3,7 +3,7 @@ title:  "Bertelsmann"
 subtitle: "To be or not to be a customer. That is the question"
 author: "Dirk Lindner"
 avatar: "img/authors/Bild_Dirk_Lindner.jpg"
-image: "img/ball.jpg"
+image: "img/d.jpg"
 date:   2023-03-31
 ---
 
