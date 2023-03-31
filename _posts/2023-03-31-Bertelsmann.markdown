@@ -1,10 +1,10 @@
 ---
-title:  "How much are you worth?"
-subtitle: "At least a fortune!"
+title:  "Bertelsmann"
+subtitle: "To be or not to be a customer. That is the question"
 author: "Dirk Lindner"
 avatar: "img/authors/Bild_Dirk_Lindner.jpg"
 image: "img/ball.jpg"
-date:   2023-03-09
+date:   2023-03-31
 ---
 
 ### Market value of soccer players
