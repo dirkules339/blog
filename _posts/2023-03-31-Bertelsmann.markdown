@@ -74,6 +74,8 @@ Using the model on the test data I got a result of 9371 individuals likely to be
 
 ### 3. Conclusion
 
-So you can see it is very easy to get a simple prediciton model running in the firs place. But it is very important to prepare the data used to get good results and it helps to have some generel knowledge of the data to identify issues. For me as soccer fan for example it was easy to see that something was wrong with my dataset as I saw the rank of nehterlands soccer league. Aside from that it is really important to use the right variables to get good model fit. You should onl use these ones who have an actua impact on your dependent variable.
+So you can see it is very important to prepare the data used to get good results and it helps to have some generel knowledge of the data to identify issues. By using thresholds and imputing values it was possible to use as many data as possible to strongen the prediciton. 
+Additionally it is a good idea to compare different models by there performance. I chose a model with a good performance over a model with less time taken by the training, but in some situations a really fast model is needed so it could be importent to take the time into account.
+Overall the result seems to be a good model.
 
 
