@@ -7,13 +7,11 @@ image: "img/ball.jpg"
 date:   2023-03-31
 ---
 
-### Market value of soccer players
-In this post I'm analysing the market value of soccer players using a dataset from Kaggle. The dataset is scraped from transfermarkt.com.
-At first I take a look at the data in generell to get an idea what data is available and on what the market value of soccer players might depend on.
-In the second step I use this results in a basic linear regression model to predict the market value. So let's take a look at the results. After these changes we now see the top five leagues by market value of players are Great Britain, Spain, Italy, Germany and France. Netherlands are now ranked 9th place and are no longe part of the top five. That shows us, that the cleaning of the data is a crucial part of analysing data to get the right results.
+### Customer Segmentation and Acquisition - Bertelsmann Arvato
+In this project, I have employed the use of supervised and unsupervised machine learning algorithms to deal with real-life data provided by Bertelsmann Arvato Analytics. More specifically, I have worked on 4 demographics datasets and 2 metadata files provided by Arvato Financial Services with the goal of helping a client mailorder company target next probable customers.
 
 ### Github Repo:
-You can find the full code here: https://github.com/dirkules339/Udacity_Data_Science_Nanodegree.git
+You can find the full code here: [https://github.com/dirkules339/Bertelsmann-Arvato-Project.git]
 
 ### 1. Take a look at the data
 After I took a first Look on the data with a the help of a boxplot, I saw that there are some changes needed befor the data is interpretable. So I changed the format of the market value into million € to make it more readable. I only included data where the market value is not null and the players last season where in 2022 and they haven't got an expired contract right now. I did that to look only at players who are still playing in an european pro league.
