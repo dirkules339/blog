@@ -38,22 +38,23 @@ Next I reencoded categorical variables and changed value errors to nan values wi
 ![A test image](img/B7.png)
 
 
-### 2. Simple linear regression model to predict market value of players
+### 2. Customer Segmentation Report
 
-After getting a better understandig of the data I generated dummy variables as preparation for a first linear regression model to predict the market value of soccer players. Below you can see the example of sub postion dummy variables. For the regression model I generated dummy variables of postion, sub postion, foot and the current competition id. Additionally I used current club id and the players heights as variables for the model.
+For the customer segmentation I decided to do a PCA to reduce dimensions befor I use k-means clustering to to the customer segmentation. I wanted to keep a smaller number of features while retaining high explained data variance. To decide how many top components to include, it was helpful to look at how much data variance the components captured. Round about 210 features can explain 90% data variance. So I decided to keep 210 features for the segmentation.
  
-#### Generate dummy variables of sub positions (basic information)
-![A test image](img/6.png)
+#### Explained variance by principal components (AZDIAS)
+![A test image](img/B8.png)
 
-With a training R2 of 0.25 the first model wasn't quiet good. You can see how predicted and actuel response differ in the plot below. Interessting fact: The testing R2 of scikit learn linear regression model becomes negative if it is lower than 0.5! 
+Next I did the segmentation with k-means clustering. At first I chose the numbers of clusters (10 clusters) with the help of an elbow graph. And after that I plotted the results of k-means clustering for the general population and the customer base. The plot shows that some clusters are overrepresented by customers (0, 1, 3, 6) whereas others don't. This gives us an idea of better targetting future customers.
 
-#### Compare prediciton with actual response
-![A test image](img/7.png)
+#### Elbow graph
+![A test image](img/B9.png)
 
-To improve the model I added additional variables like goals, assists, red cards, yellow cards and minutes played to our dataset. Even if that improved the training R2 to 0.55 the testing R2 is still negative. That means the model has still room for improvement, but by adding some more specififc player stats to the model I easily doubled the fit. 
+#### General population and customer base in cluster
+![A test image](img/B10.png)
 
-#### Generate dummy variables (personal player stats)
-![A test image](img/8.png)
+
+
 
 #### Compare prediciton with actual response
 ![A test image](img/9.png)
