@@ -11,7 +11,7 @@ date:   2023-03-31
 In this project, I have employed the use of supervised and unsupervised machine learning algorithms to deal with real-life data provided by Bertelsmann Arvato Analytics. More specifically, I have worked on 4 demographics datasets and 2 metadata files provided by Arvato Financial Services with the goal of helping a client mailorder company target next probable customers.
 
 ### Github Repo:
-You can find the full code here: [https://github.com/dirkules339/Bertelsmann-Arvato-Project.git]
+You can find the full code here: https://github.com/dirkules339/Bertelsmann-Arvato-Project.git
 
 ### 1. Preprosessing
 After a first look into the data I saw that the datasets included a lot of missing values. To clean the data enough without loosing to much data I decided to define a threshold for columns and rows to drop. By Using the confidence interval of 99% I defind the threshold for columns to drop by 20% missing values and for rows to drop by 10% missing values. By that I could keep 99% of columns and rows.
