@@ -8,7 +8,9 @@ date:   2023-03-31
 ---
 
 ### 1. High Level Overview - Customer Segmentation and Acquisition - Bertelsmann Arvato
+
 In this project, I have employed the use of supervised and unsupervised machine learning algorithms to deal with real-life data provided by Bertelsmann Arvato Analytics. Arvato is looking to determine which people would be the most likely to turn into customers. 
+
 
 — Description of Input Data —
 
@@ -17,6 +19,7 @@ They have provided a few datasets:
  - Customers (191652 rows, 369 columns): The Customers dataset contains information on existing customers.
  - Mailout Train (42962 rows, 367 columns): The Mailout Train dataset contains data that describes customers that have either responded or not.
  - Mailout Test (): The Mailout Test dataset contains data that describes potential customers.
+
 
 — Strategy for solving the problem—
 
@@ -34,11 +37,13 @@ Supervised Learning Model:
  - By building a machine learning model using the Mailout Train dataset, with the response of a marketing campaign, the determination can be made for which people are most likely to become customers.
  - I use several machine learning classifiers and then choose the best using analysis from learning curves. This model can then be used to make predictions
 
+
 — Metrics —
 
  - An AUC-ROC curve from predicted probabilities will be used to evaluate the performance of the models.
  - AUC-ROCis a performance measurement for the classification problems at various threshold settings. ROC is a probability curve and AUC represents the degree or measure of separability. It tells how much the model is capable of distinguishing between classes. Higher the AUC, the better the model is at predicting whether a person is just a person or if they are really a customer.
  - ROC is created by plotting the true positive rate (TPR) against the false positive rate (FPR).
+
 
 ### 2. Data Exploration and Preprosessing
 After a first look into the data I saw that the datasets included a lot of missing values. To clean the data enough without loosing to much data I decided to define a threshold for columns and rows to drop. By Using the confidence interval of 99% I defind the threshold for columns to drop by 20% missing values and for rows to drop by 10% missing values. By that I could keep 99% of columns and rows.
@@ -48,7 +53,6 @@ After a first look into the data I saw that the datasets included a lot of missi
 
 #### Proportion of missing values per row in AZDIAS
 ![A test image](img/B2.png)
-
 
 Next I reencoded categorical variables and changed value errors to nan values with the help of some basic data manipulations and sklearns one hot encoder before I imputed missing values and scaled the features as preperation for the segmentation and modelling part.
 
@@ -83,12 +87,14 @@ Next I did the segmentation with k-means clustering. At first I chose the number
 
 ### 4. Supervised Learning Model
 
+
 — Balance the train data —
 
 In the last step I wanted to train and test a supervised learning model to predict whether an individual of the poulation is likely to become a customer. For that I looked into the train and test data likewise the data from step 1. I found out that there was an imbalance of the responses of the dataset so I needed to balance the data before I did the preprocessing likewise step 1. 
 
 #### Balance train data
 ![A test image](img/B11.png)
+
 
 — Modeling and Tuning —
 
@@ -100,13 +106,13 @@ I decided to use three different models for the prediction and compare them by t
 #### Model performance
 ![A test image](img/B14.png)
 
+
 — Results and Justification —
 
 The final AUROC score of the project is 0.9. What seems to be a really good result which shows that the goal of the project was achieved. 
 Using the model on the test data 9371 individuals are likely to become a customer. Which are round about 21% of all test individuals.
 
 In the building of the supervised learning model, during the preprocessing phase, there were many columns that were used, but there were also many columns that were removed. When looking at the threshold to use for removing columns and rows with null data, it was determined to remove columns that have 40% and rows that have 10% or more missing data. This value could easily have been changed up or down and would have an effect on the final model.
-
 
 
 #### Prediction
@@ -121,8 +127,10 @@ Overall the result seems to be a good model.
 
 However, this project is not complete. There is much more work that could be done on the data to improve the predictive model. For instance, more or fewer features could be removed. The taken time for model training was really high (Time taken: 597.1155662536621) so maybe it would be better to test other algorithms as well like random forest. And Lightgbm had a really good model AUROC score of .98 where I assumed overfitting issue, so it is woth looking into that and find out if that is true.
 
+
 ### 6. Acknowldgements
 I would like to thank the commitment of Udacity for presenting me to this Capstone project and Arvato Financial Services for providing the real-life data.
+
 
 ### Github Repo:
 You can find the full code here: https://github.com/dirkules339/Bertelsmann-Arvato-Project.git
