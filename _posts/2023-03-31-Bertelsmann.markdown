@@ -54,10 +54,23 @@ Next I did the segmentation with k-means clustering. At first I chose the number
 ![A test image](img/B10.png)
 
 
+### 3. Supervised Learning Model
 
+In the last step I wanted to train and test a supervised learning model to predict whether an individual of the poulation is likely to become a customer. For that I looked into the train and test data likewise the data from step 1. I found out that there was an imbalance of the responses of the dataset so I needed to balance the data before I did the preprocessing likewise step 1. 
 
-#### Compare prediciton with actual response
-![A test image](img/9.png)
+#### Balance train data
+![A test image](img/B11.png)
+
+I decided to use three different models for the prediction and compare them by their performances. I compared logistic regression, gradient boosting and lightgbm. Lightgbm had by far the best performance. But with an AUROC of 0.98 this could be a sign of overfitting. So I decided to go with the second best model gradient boosting (AUROC score of 0.9) for the prediction despite of the much more time taken by training the model.
+
+#### Model performance
+![A test image](img/B12.png)
+
+Using the model on the test data I got a result of 9371 individuals likely to become a customer. Which are round about 21% of all test individuals.
+
+#### Prediction
+![A test image](img/B13.png)
+
 
 ### 3. Conclusion
 
