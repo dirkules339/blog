@@ -103,7 +103,7 @@ I decided to use three different models for the prediction and compare them by t
 #### Model performance
 ![A test image](img/B12.png)
 
-#### Model performance
+#### Tuning
 ![A test image](img/B14.png)
 
 
